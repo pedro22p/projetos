@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projetos</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background: #0f1115;
+            color: #e8eaf0;
+            line-height: 1.6;
+        }
+
+        .topo { text-align: center; padding: 4rem 1.5rem 2rem; }
+        .projetos { font-size: 2.5rem; letter-spacing: .1em; }
+        .topo p { color: #9aa3b5; margin-top: .5rem; }
+
+        .grade {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .cartao {
+            background: #181b22;
+            border: 1px solid #262b36;
+            border-radius: 14px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            transition: transform .2s, border-color .2s;
+        }
+        .cartao:hover { transform: translateY(-4px); border-color: #6c8cff; }
+        .cartao p { color: #9aa3b5; flex: 1; }
+
+        .botao {
+            align-self: flex-start;
+            padding: .5rem 1rem;
+            border-radius: 8px;
+            background: #6c8cff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .botao:hover { opacity: .85; }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <h1 class="projetos">PROJETOS</h1>
+        <p>ESTE REPOSITÓRIO EU COLOCO TODOS MEUS PROJETOS</p>
+    </header>
+
+    <main class="grade">
+        <article class="cartao">
+            <h2>Feward</h2>
+            <p>Rede social focada em conexões reais.</p>
+            <a class="botao" href="#">Ver projeto</a>
+        </article>
+
+        <article class="cartao">
+            <h2>Feward Assistente de Voz</h2>
+            <p>Assistente de voz em Python para Ubuntu.</p>
+            <a class="botao" href="#">Ver projeto</a>
+        </article>
+
+        <article class="cartao">
+            <h2>Jarvis 3D</h2>
+            <p>IA controlada por voz que gera modelos 3D interativos.</p>
+            <a class="botao" href="#">Ver projeto</a>
+        </article>
+    </main>
+</body>
+</html>
